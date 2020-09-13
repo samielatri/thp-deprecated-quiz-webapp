@@ -97,4 +97,22 @@ function checker(element) {
   // console log the correct answer
   console.log(element.target.answer) ;
   console.log(this.answer) ; // this refers to questions.answer
+  
+  let selectedOption = element.target ; 
+  console.log(selectedOption.textContent) ;
+  // correct answer
+  if(selectedOption.textContent == selectedOption.answer) {
+    console.log('correct answer') ;
+    nextButton.textContent = "Bien joué ! Clique ici pour passer à la question suivante." ;
+    // increment score
+    quiz.score ++ ;
+  } else { // wrong answer
+    console.log('wrong answer') ;
+    nextButton.textContent = "Mauvaise réponse ! Clique ici pour passer à la question suivante."
+  }
+
+  // move to the next question of quiz
+  quiz.value ++ ;
+  // nextButton appears
+  nextButton.style.display = "block" ;
 }
