@@ -70,14 +70,18 @@ function createQuestion() {
   console.log(questions) ;
   // content of main repalcing questionArea
   main.textContent = questions.question ;
+  main.classList.add('question') ;
   questionArea.appendChild(main) ;
   // extract all options from option array 
   questions.option.forEach(function(element) {
     // console log for current element (option)
     console.log(element) ;
-    // add spanElment to represent the option in the questionArea
+    // add spanElment with style to represent the option in the questionArea
     let spanElement = document.createElement('span') ;
     spanElement.textContent = element ;
+    // add class tyle to spanElement
+    spanElement.classList.add('answer') ; // apply answer style 
+    spanElement.classList.add('btn') ; // apply button style added
     questionArea.appendChild(spanElement) ;
     spanElement.answer = questions.answer ;
     // addEventListener of click on spanElement to check the option with checker function
