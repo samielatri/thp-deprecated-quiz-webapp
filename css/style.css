@@ -1,34 +1,77 @@
+body {
+	font-family: arial ;
+	font-size: 15px ;
+	line-height: 1.6em ;
+	background: #f4f4f4 ;
+}
+
+.pull-left {
+	float:left ;
+}
+
+.pull-right {
+	float:right ;
+}
+
 .next-button {
-  font-size: 1em;
-  background-color: blue;
-  width: 300px;
-  margin: 20px 0;
-  padding: 10px;
-  display: none;
-  cursor: pointer;
+  font-size: 1em ;
+  background-color: blue ;
+  color: #ffffff ;
+  width: 300px ;
+  margin: 20px 0 ;
+  padding: 10px ;
+  display: none ;
+  cursor: pointer ; 
 }
 
 .btn {
-  display: inline-block;
-  padding: 5px;
-  font-family: sans-serif;
-  border-radius: 10px;
-  font-size: 1.5em;
-  margin-right: 10px;
-  cursor: pointer;
+  display: inline-block ;
+  padding: 5px ;
+  font-family: sans-serif ;
+  border-radius: 10px ;
+  font-size: 1.5em ;
+  margin-right: 10px ;
+  cursor: pointer ;
 }
  
 .answer {
-  border: 1px solid #ddd;
+  border: 1px solid #ddd ;
 }
  
 .answer:hover {
-  background-color: beige;
-  border: 1px solid red;
+  background-color: beige ;
+  border: 1px solid red ;
 }
  
 .question {
-  display: block;
-  font-size: 2em;
-  margin-bottom: 20px;
+  display: block ;
+  margin-top: 20px ;
+  margin-bottom: 20px ;
+}
+
+.container{
+	width: 70% ;
+	margin: 20px auto ;
+	overflow: auto ;
+}
+
+header {
+  background: #1f88f4 ;
+  color: #ffffff ;
+  padding: 5px 10px ;
+  overflow: auto ;
+  font-size: 16px ;
+}
+
+footer {
+  background: #1f88f4 ;
+  color: #ffffff ;
+  padding: 5px 10px ;
+  overflow: auto ;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90% ;
+  }
 }

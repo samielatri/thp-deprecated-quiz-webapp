@@ -89,6 +89,8 @@ function createQuestion() {
       spanElement.classList.add('answer') ; // apply answer style 
       spanElement.classList.add('btn') ; // apply button style added
       questionArea.appendChild(spanElement) ;
+	  let breakElement = document.createElement('br') ;
+	  questionArea.appendChild(breakElement) ;
       spanElement.answer = questions.answer ;
       // addEventListener of click on spanElement to check the option with checker function
       spanElement.addEventListener('click', checker) ;
