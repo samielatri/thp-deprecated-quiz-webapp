@@ -8,7 +8,7 @@ console.log(informationArea) ;
 // question area : variable to hold the questionArea question
 const questionArea = document.querySelector('.question') ;
 console.log(questionArea) ;
-// next button : varaible to hold the next button
+// next button : variable to hold the next button
 const nextButton = document.querySelector('.next-button') ;
 console.log(nextButton) ;
 
@@ -68,7 +68,7 @@ function createQuestion() {
   let questions = quiz.array[quiz.value] ;
   // current question console log
   console.log(questions) ;
-  // content of main repalcing questionArea
+  // content of main replacing questionArea
   main.textContent = questions.question ;
   main.classList.add('question') ;
   questionArea.appendChild(main) ;
@@ -76,10 +76,10 @@ function createQuestion() {
   questions.option.forEach(function(element) {
     // console log for current element (option)
     console.log(element) ;
-    // add spanElment with style to represent the option in the questionArea
+    // add spanElement with style to represent the option in the questionArea
     let spanElement = document.createElement('span') ;
     spanElement.textContent = element ;
-    // add class tyle to spanElement
+    // add class style to spanElement
     spanElement.classList.add('answer') ; // apply answer style 
     spanElement.classList.add('btn') ; // apply button style added
     questionArea.appendChild(spanElement) ;
@@ -97,16 +97,28 @@ function checker(element) {
   // console log the correct answer
   console.log(element.target.answer) ;
   console.log(this.answer) ; // this refers to questions.answer
-  
+
+  // all answer elements
+  const allAnswers = document.querySelectorAll('.answer') ; // const need to be defined here
+  // no more clickable answers/options
+  allAnswers.forEach(function(element1){
+    element1.classList.remove('answer') ; // remove answer class
+    element1.style.color = '#ddd' ; // mute color
+    // no more effect on click
+    element1.removeEventListener('click', checker) ;
+  })
+
   let selectedOption = element.target ; 
   console.log(selectedOption.textContent) ;
   // correct answer
   if(selectedOption.textContent == selectedOption.answer) {
     console.log('correct answer') ;
+    selectedOption.style.color = 'green' ; // turns green
     nextButton.textContent = "Bien joué ! Clique ici pour passer à la question suivante." ;
     // increment score
     quiz.score ++ ;
   } else { // wrong answer
+    selectedOption.style.color = 'red' ; // turns red
     console.log('wrong answer') ;
     nextButton.textContent = "Mauvaise réponse ! Clique ici pour passer à la question suivante."
   }
