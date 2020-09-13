@@ -5,6 +5,12 @@ body {
 	background: #f4f4f4 ;
 }
 
+.flex-container {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .pull-left {
 	float:left ;
 }
