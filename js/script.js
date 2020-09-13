@@ -2,15 +2,16 @@
 
 /* selected page elements */
 
-// information area : variable to hold the output information
+// information area : variable to hold the questionArea information
 const informationArea = document.querySelector('.information') ;
 console.log(informationArea) ;
-// question area : variable to hold the output question
+// question area : variable to hold the questionArea question
 const questionArea = document.querySelector('.question') ;
 console.log(questionArea) ;
-// next button ! varaible to hold the next button
+// next button : varaible to hold the next button
 const nextButton = document.querySelector('.next-button') ;
 console.log(nextButton) ;
+
 /* questionURL object */
 
 // question url to connect to
@@ -21,7 +22,12 @@ const questionUrl = 'https://script.google.com/macros/s/AKfycbxRgyvagg_MhCRSqDZn
 // quiz : global object to hold the quiz data
 const quiz = {} ;
 
-/* eventListeners */
+/* added page element */
+
+// main content to replace after load content of questionArea
+const main = document.createElement('div') ;
+
+/* main */
 
 // onClick, it creates the new question
 nextButton.addEventListener('click', createQuestion) ;
@@ -32,18 +38,19 @@ fetch(questionUrl).then(function(questionResult) {
 }).then(function(question){
   // print the questionResult in json format in console to verify that it is loaded
   console.log(question.data) ;
-  //
-  quiz.total = question.data.length ;
-  //
-  quiz.val = 0 ;
-  //
+  // total number of questions
+  quiz.total = question.data.length ; // JSON data for the quiz
+  // current question
+  quiz.value = 0 ;
+  // score
   quiz.score = 0 ;
-  //
-  quiz.arr = question.data ;
-  //
-  question.data.forEach(function(el) {
-    console.log(el) ;
+  // array
+  quiz.array = question.data ;
+  // console log
+  question.data.forEach(function(element) {
+    console.log(element) ;
   })
+  // create question
   createQuestion() ;
 }) ;
 
@@ -51,6 +58,39 @@ fetch(questionUrl).then(function(questionResult) {
 function createQuestion() {
   // the next button disappears
   nextButton.style.display = "none" ;
-
+  // indicate current question out of total questions in french for user
+  informationArea.textContent = "Question nº" + (quiz.value + 1) + " sur " + quiz.total ;
+  // clear HTML in the questionArea
+  questionArea.innerHTML = "" ;
+  // Console log to see all quiz data
+  console.log(quiz) ;
+  // current question data
+  let questions = quiz.array[quiz.value] ;
+  // current question console log
+  console.log(questions) ;
+  // content of main repalcing questionArea
+  main.textContent = questions.question ;
+  questionArea.appendChild(main) ;
+  // extract all options from option array 
+  questions.option.forEach(function(element) {
+    // console log for current element (option)
+    console.log(element) ;
+    // add spanElment to represent the option in the questionArea
+    let spanElement = document.createElement('span') ;
+    spanElement.textContent = element ;
+    questionArea.appendChild(spanElement) ;
+    spanElement.answer = questions.answer ;
+    // addEventListener of click on spanElement to check the option with checker function
+    spanElement.addEventListener('click', checker) ;
+  })
 }
 
+// check the selected option
+function checker(element) {
+  // console log for current selected option
+  console.log(element.target) ;
+  console.log(this) ; // this refers to questions
+  // console log the correct answer
+  console.log(element.target.answer) ;
+  console.log(this.answer) ; // this refers to questions.answer
+}
