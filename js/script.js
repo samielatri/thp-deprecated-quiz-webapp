@@ -56,37 +56,45 @@ fetch(questionUrl).then(function(questionResult) {
 
 // create question
 function createQuestion() {
-  // the next button disappears
-  nextButton.style.display = "none" ;
-  // indicate current question out of total questions in french for user
-  informationArea.textContent = "Question nº" + (quiz.value + 1) + " sur " + quiz.total ;
-  // clear HTML in the questionArea
-  questionArea.innerHTML = "" ;
-  // Console log to see all quiz data
-  console.log(quiz) ;
-  // current question data
-  let questions = quiz.array[quiz.value] ;
-  // current question console log
-  console.log(questions) ;
-  // content of main replacing questionArea
-  main.textContent = questions.question ;
-  main.classList.add('question') ;
-  questionArea.appendChild(main) ;
-  // extract all options from option array 
-  questions.option.forEach(function(element) {
-    // console log for current element (option)
-    console.log(element) ;
-    // add spanElement with style to represent the option in the questionArea
-    let spanElement = document.createElement('span') ;
-    spanElement.textContent = element ;
-    // add class style to spanElement
-    spanElement.classList.add('answer') ; // apply answer style 
-    spanElement.classList.add('btn') ; // apply button style added
-    questionArea.appendChild(spanElement) ;
-    spanElement.answer = questions.answer ;
-    // addEventListener of click on spanElement to check the option with checker function
-    spanElement.addEventListener('click', checker) ;
-  })
+  // end quiz
+  if(quiz.value+1 > quiz.total) {
+    informationArea.textContent = 'Score: ' + quiz.score + ' sur ' + quiz.total ; // display score
+    questionArea.textContent = "Quiz terminé !" ; // indicates that the quiz ended
+    nextButton.style.display = "none" ; // button disappears
+  // continue quiz
+  } else {
+    // the next button disappears
+    nextButton.style.display = "none" ;
+    // indicate current question out of total questions in french for user
+    informationArea.textContent = "Question nº" + (quiz.value + 1) + " sur " + quiz.total ;
+    // clear HTML in the questionArea
+    questionArea.innerHTML = "" ;
+    // Console log to see all quiz data
+    console.log(quiz) ;
+    // current question data
+    let questions = quiz.array[quiz.value] ;
+    // current question console log
+    console.log(questions) ;
+    // content of main replacing questionArea
+    main.textContent = questions.question ;
+    main.classList.add('question') ;
+    questionArea.appendChild(main) ;
+    // extract all options from option array 
+    questions.option.forEach(function(element) {
+      // console log for current element (option)
+      console.log(element) ;
+      // add spanElement with style to represent the option in the questionArea
+      let spanElement = document.createElement('span') ;
+      spanElement.textContent = element ;
+      // add class style to spanElement
+      spanElement.classList.add('answer') ; // apply answer style 
+      spanElement.classList.add('btn') ; // apply button style added
+      questionArea.appendChild(spanElement) ;
+      spanElement.answer = questions.answer ;
+      // addEventListener of click on spanElement to check the option with checker function
+      spanElement.addEventListener('click', checker) ;
+    })
+  }
 }
 
 // check the selected option
