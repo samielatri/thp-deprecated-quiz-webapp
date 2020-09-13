@@ -79,6 +79,8 @@ function createQuestion() {
     main.textContent = questions.question ;
     main.classList.add('question') ;
     questionArea.appendChild(main) ;
+    // randomize options 
+    arrayRandom(questions.option) ;
     // extract all options from option array 
     questions.option.forEach(function(element) {
       // console log for current element (option)
@@ -95,6 +97,13 @@ function createQuestion() {
       spanElement.addEventListener('click', checker) ;
     })
   }
+}
+
+// randomize array
+function arrayRandom(arr) {
+  arr.sort(function() {
+    return .5 - Math.random() ;
+  })
 }
 
 // check the selected option
