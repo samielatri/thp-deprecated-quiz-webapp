@@ -1,0 +1,7 @@
+Question,Answer,Options,,
+Appelle la fonction de somme,sum() : génial !,call sum() : il répond pas ce petit sum(),"call function sum() : allo, tu m'entends petite fonction ?",
+sors moi une boite d'alerte !,"alert(""boite alerte"");","msg (""boite alerte"");","alertBox(""alert"");",
+le égal pour comparer ?,double egal : tout est en double,un egal suffit : pourquoi on en voudrait plus ?,,
+le égal d'affectation ?,un egal suffit : pourquoi on en voudrait plus ?,double egal : tout est en double,,
+a pas egal à 2 ?,if (a != 2),if a != 2 then,if (a <> 2),
+declare fonction !,function f(),function = f(),let function : f(),Aucune de ces réponses
