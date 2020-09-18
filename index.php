@@ -1,5 +1,5 @@
 <?php
 
-include_one("index.html");
+include_once("quiz.html");
 
 ?>
