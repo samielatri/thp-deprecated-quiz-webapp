@@ -1,0 +1,6 @@
+Question,Answer,Options,,
+représentation d'une page ?,view,controller,model,
+gestion des routes ?,controller,view,model,
+"trouver l'intru, rails se base sur ces avantages :",active support,DRY,Convention over Configutation,Scaffolding
+DRY ?,Don't Repeat Yourself,Don't Run Yml,Don't Ruin Yourself,
+communication entre la base de données  ?,model,view,controller,
