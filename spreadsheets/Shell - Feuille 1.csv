@@ -1,0 +1,6 @@
+Question,Answer,Options,
+cd ?,change de répertorie : mais c'est quoi le rapport avec un cd :p,ouvre le lecteur cd : ça existe encore ?,
+ls ?,lister les dossiers et fichiers dans le dossier : liste tout,lister que les fichiers : c'est déjà pas mal,lister les dossiers : pas besoin de voir les fichiers
+pwd ?,afficher le chemin actuel : utile,copie les fichiers du dossier actuel : copie tout,colle tous les fichiers collés
+man ?,manuel : de cuisine ?,crée des hommes : man in black,retour au dossier racine de manière manuelle : alors elle sert à rien
+pour créer un répertoire ?,mkdir : c'est quoi ce nom xD,"touch : d'une touche, tu crée tout !","cat : quoi que tu fasses, sors moi un chaton !"

@@ -33,7 +33,7 @@ Par la suite, il suffit, de remplacer dans le code contenu dans gs/Code.gs "put_
 
 Vous pourrez, alors, lancer l'éditeur de scripts intégré à partir du menu outils/editeur de scirpts, et de coller ledit code.
 
-Il ne reste plus qu'à générer l'application et de copier le lien de cette dernière pour le coller dans le fichier javascript correspondant(js/nom_du_quiz.js).
+Il ne reste plus qu'à générer l'application (l'application doit etre accessible par n'importe qui, meme anonyme) et de copier le lien de cette dernière pour le coller dans le fichier javascript correspondant(js/nom_du_quiz.js).
   
 ### Edition d'un Quiz existant
 

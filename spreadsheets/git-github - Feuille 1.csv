@@ -1,0 +1,7 @@
+Question,Answer,Options,,
+Comment initialiser un répertoire git ?,git init : aussi simple que cela,git : tout court !,git initialize : long mais ça le fait !,
+Comment ramener le répertoire github en local ?,git clone : clonage de tout et n'importe quoi !,git fork : sans fourchette !,git push : allez pousse !,git commit : come eat !
+Comment transférer le code dans Github ?,git push : allez pousse !,git clone : clonage de tout et n'importe quoi !,git fork : sans fourchette !,git push : allez pousse !
+Comment récupérer le code d'un autre répertoire que le notre ?,Fork à travers l'interface GitHub : et on se dit HACKER !,git fork: sans fourchette !,git pull-request : laisse moi pull !!!!,git clone : c'est surement pas la bonne réponse
+Comment enregistrer l'état du code dans git ?,git commit : ça s'appelle un commit Monsieur !,git stage : C'est du staging Papy !,git add : ajoutons tout !,
+Comment avoir l'historique des modifications dans git ?,git log : aussitot loggé que déconneté,gut fetch : joeur de cartes,gut diff : différents = uniques !,

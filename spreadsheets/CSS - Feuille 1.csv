@@ -1,0 +1,5 @@
+Question,Answer,Options,,
+"pour placer du texte autour d'une image, quelle propriété CSS utiliser ?",float : flotte tout autour,"wrap : un petit wrapper, c'est cadeau !",align : aligne moi tout ça !,push : allez pousse !
+aligner les éléments avec margin-left et margin-right ?,NON : c'est triste,OUI : tout est simple dans la vie.,je ne sais pas : bah tu devrais essayer avant de répondre,
+CSS c'est ?,"Cascading Style Sheet : feuilles, cascade et style, ça vous fait penser à quoi ?","Costume Style Sheet : costume et style, sappé comme jamais",Cascading System Style : trop technique comme nom,"Aucune de ces réponses n'est vraie : Rien n'est vrai, tout est permis"
+Commentaire en css ?,/* commentez */,// un max //,/ vos codes /,<!-- ou écirvez du code simple -->

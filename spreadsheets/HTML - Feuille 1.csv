@@ -1,0 +1,10 @@
+Question,Answer,Options,,
+HTML c'est ?,un langage de balisage : et de valises :),langage de bas niveau : super bas,langage de haut niveau : super haut,"Langage de programmation : qu'est ce que tu voudrais que ça soit d'autre, hein ?"
+extensition d'un fichier HTML ?,.html : pourquoi se compliquer la vie ?,".hml : ça sonne plus classe, non ?",htnl : futur prénom du fils d'Ellon Musk ?,
+Je veux un grand titre en HTML ?,H1 : ce n'est pas la taille qui compte,H6 : la tour eiffel,Heading : encore un mot en anglais avec ing à la fin,Head : la grosse tete
+Je veux un paragraphe en HTML ?,p : il a dit papa,pre : préformaté,écrire le texte en brut,
+Je veux un paragraphe préformaté ?,pre : le diner est pret !,"prefor : prefor, ça sonne bien",<pre text> : faut préciser que c'est un texte héhé,"<pre format> : tout est explicite, dommage..."
+Ajouter texte alternatif sur une image en HTML5 ?,<img src = “j'ai rien dans la tete” alt = “logo” />,<img src = “mais j'aime bien” alternate text = “logo” />,<img src = “faire semblant” alt text = “logo” />,<img src = “d'en avoir des choses” alternate = “logo” />
+quel attribut peut etre ajouté à plusieurs élements,class : la classe !,id : l'identifiant,div : la division et non euclidienne cette fois :p,span : ça sonne bien
+Quelle balise insère un saut de ligne ?,<br> : de la bière !,<break> : pause,<line> : saute une ligne,"<p> : c'est soit un point de plus, soit un point de moins pour ton score !"
+Quel attribut utiliser avec <table> pour lui donner bordure ?,border : traduire le mot du français en anglais est des fois la solution !,margin-left border : c'est long mais ça donne un super effet ?,Toutes les réponses sont bonnes ! : rien à dire,line : dessine moi un mouton

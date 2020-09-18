@@ -1,0 +1,5 @@
+Question,Answer,Options,,
+Quel bouton pour indiquer une action postion ?,.btn-success : succès débloqué mais pas de trophé ;),".btn-info : on en marre d'avoir que des infos négatives, voilà uen positive",.btn : simple bouton pour avori la OUII attitude,.btn-primary : primaire
+Comment avoir un look caché sur un un bouton ?,".disabled : désactivé, aussi simple que ça",.link-disabled : désactive le lien,Aucune de ces réponses : A-U-C-U-N-E,.pager-diabled : désactive toute la page
+Bootstrap c'est ?,Framework : boite à outils,Langage : encore des langages,un logiciel : l'app du mois !,
+Je veux la navbar fixée en haut ?,.navbar-fixed-top : trop explicite mais c'est top !,.navbar-fixed : fixe ça et c'est tout !,.navbar-top : elle est top cette navbar !,

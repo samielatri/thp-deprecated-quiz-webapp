@@ -1,6 +1,6 @@
 function doGet(e){
   // spreadsheet
-  var spreadsheet = SpreadsheetApp.openById('19gqz8InpQv9YO29CkDhjjtTpvSpMDmLWhNhv4qtiQwQ') ;
+  var spreadsheet = SpreadsheetApp.openById('put_the_stylesheet_id_here') ;
   // first spreadsheet
   var sheet = spreadsheet.getSheets()[0] ;
   // first spreadsheet's content

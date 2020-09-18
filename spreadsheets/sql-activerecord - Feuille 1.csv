@@ -1,0 +1,4 @@
+Question,Answer,Options,
+On écrit du SQL avec les migrations Active Record ?,On peut : tout est possible dans la vie !,Non plus jamais : SQL c'est fini !,"Oui, obligé ! : SQL c'est la vie !"
+Pour faire une migration ?,rails db:migrate : migration !,rails db : db pour DataBase,rails migrate:db : là c'est en inversé !
+Comment est ce qu'une classe utilise Active Record ?,class Test < ActiveRecord::Base end : hérite de la base d'ActiveRecord !,class Test < ActiveRecord end : hérite d'ActiveRecord,class Test end : tout est automatique !
